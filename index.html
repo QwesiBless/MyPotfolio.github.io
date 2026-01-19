@@ -20,12 +20,35 @@
       padding: 2.5rem 1.5rem;
       text-align: center;
     }
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .header-text {
+      text-align: left;
+    }
     header h1 {
       margin: 0 0 0.5rem 0;
       font-size: 2rem;
     }
     header p {
       margin: 0.25rem 0;
+    }
+    .tagline {
+      font-size: 0.98rem;
+      max-width: 650px;
+      margin: 0.5rem 0 0.5rem 0;
+    }
+    .header-photo img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #f9fafb;
     }
     main {
       max-width: 900px;
@@ -68,11 +91,6 @@
     a:hover {
       text-decoration: underline;
     }
-    .tagline {
-      font-size: 0.98rem;
-      max-width: 650px;
-      margin: 0.5rem auto 0 auto;
-    }
     .pill {
       display: inline-block;
       background: #e5e7eb;
@@ -95,60 +113,59 @@
       main {
         padding: 1.5rem 1rem 2rem 1rem;
       }
+      .header-content {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      .header-text {
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Emmanuel Amoako</h1>
-    <p>Biomedical Engineering • Medical Devices • Bioimaging & Signal Analysis</p>
-    <p class="tagline">
-      Results-driven engineer with experience in medical device prototyping, bioimaging, and quantitative data analysis, 
-      building tools that connect experimental platforms to clinically meaningful insights.
-    </p>
-    <p>
-      Boston, MA • 
-      <a href="mailto:amoakoemmanuel419@gmail.com">amoakoemmanuel419@gmail.com</a> • 
-      <a href="https://www.linkedin.com/in/emmanuel-amoako-94237b224" target="_blank">LinkedIn</a> •
-      <a href="https://github.com/QwesiBless" target="_blank">GitHub</a>
-    </p>
+    <div class="header-content">
+      <div class="header-text">
+        <h1>Emmanuel Amoako</h1>
+        <p>Biomedical Engineering • Medical Devices • Bioimaging & Signal Analysis</p>
+        <p class="tagline">
+          Results-driven engineer with experience in medical device prototyping, bioimaging, and quantitative data analysis,
+          building tools that connect experimental platforms to clinically meaningful insights.
+        </p>
+        <p>
+          Boston, MA • 
+          <a href="mailto:amoakoemmanuel419@gmail.com">amoakoemmanuel419@gmail.com</a> • 
+          <a href="https://www.linkedin.com/in/emmanuel-amoako-94237b224" target="_blank">LinkedIn</a> •
+          <a href="https://github.com/QwesiBless" target="_blank">GitHub</a>
+        </p>
+      </div>
+      <div class="header-photo">
+        <img src="DSCF4989.jpg" alt="Photo of Emmanuel Amoako" />
+      </div>
+    </div>
   </header>
 
   <main>
     <section id="about">
       <h2>About</h2>
       <p>
-        Emmanuel is a biomedical engineer with graduate training in bioengineering, focused on biomedical devices and bioimaging from Northeastern University.
+        Emmanuel is a biomedical engineer with graduate training in bioengineering, focusing on biomedical devices and bioimaging.
         His work spans algorithm development in Python and MATLAB, medical device prototyping, and experimental imaging and signal analysis for translational research.
       </p>
       <p>
-        He enjoys working at the interface of hardware, software, and biology, developing systems that turn raw sensor data into clinically relevant information for diagnostics and therapy.
+        He enjoys working at the interface of hardware, software, and biology—developing systems that turn raw sensor data into clinically relevant information for diagnostics and therapy.
       </p>
     </section>
 
     <section id="projects">
       <h2>Selected Projects</h2>
-
-      <h3>Non-Invasive Detection of Circulating Tumor Cells</h3>
       <p class="subheading">
-        Research Assistant, Niedre Lab – Northeastern University (2025)
+        Projects are grouped to highlight both industry-focused engineering work and academic research experiences relevant to PhD-level training.
       </p>
-      <p>
-        Developed algorithms and experiments to detect fluorescently labeled circulating tumor cells non-invasively in live animal models using near-infrared laser techniques.
-      </p>
-      <ul>
-        <li>Designed Python and MATLAB algorithms for signal detection and clearance analysis from in vivo optical data.</li>
-        <li>Conducted benchtop and in vivo experiments with tumor-repopulating and wild-type melanoma cells.</li>
-        <li>Processed and visualized time-series and imaging data, contributing to thesis work and potential publications.</li>
-        <li>Communicated results in technical reports, research meetings, and presentations.</li>
-      </ul>
-      <p>
-        <span class="pill">Python</span>
-        <span class="pill">MATLAB</span>
-        <span class="pill">In Vivo Imaging</span>
-        <span class="pill">Signal Processing</span>
-        <span class="pill">Near-Infrared Fluorescence</span>
-      </p>
+
+      <!-- Industry R&D–Focused Projects -->
+      <h3>Industry R&D–Focused Projects</h3>
 
       <h3>Prototype Diagnostic Imaging System for Corneal Disease</h3>
       <p class="subheading">
@@ -189,24 +206,6 @@
         <span class="pill">Rapid Prototyping</span>
       </p>
 
-      <h3>X-ray Microdiffraction Analysis in Alzheimer’s Disease</h3>
-      <p class="subheading">
-        Research Assistant, Makowski Lab – Northeastern University (2023–2024)
-      </p>
-      <p>
-        Developed Python algorithms to convert X‑ray microdiffraction data into 2D brain maps to study structural changes associated with Alzheimer’s disease.
-      </p>
-      <ul>
-        <li>Implemented data processing pipelines for high‑dimensional diffraction datasets.</li>
-        <li>Generated structural maps to support hypotheses about disease‑related tissue changes.</li>
-        <li>Collaborated with researchers to interpret quantitative findings and refine analysis strategies.</li>
-      </ul>
-      <p>
-        <span class="pill">Python</span>
-        <span class="pill">Scientific Computing</span>
-        <span class="pill">Neuroimaging-Adjacent Analysis</span>
-      </p>
-
       <h3>Clinical Engineering and Low‑Cost Device Innovation</h3>
       <p class="subheading">
         Clinical Engineering Intern, St. Theresa’s Hospital, Ghana (2019)
@@ -223,6 +222,48 @@
         <span class="pill">Medical Instrumentation</span>
         <span class="pill">Resource-Limited Design</span>
         <span class="pill">Clinical Environment</span>
+      </p>
+
+      <!-- Academic / PhD–Track Projects -->
+      <h3>Academic & PhD–Track Projects</h3>
+
+      <h3>Non-Invasive Detection of Circulating Tumor Cells</h3>
+      <p class="subheading">
+        Research Assistant, Niedre Lab – Northeastern University (2025)
+      </p>
+      <p>
+        Developed algorithms and experiments to detect fluorescently labeled circulating tumor cells non-invasively in live animal models using near-infrared laser techniques.
+      </p>
+      <ul>
+        <li>Designed Python and MATLAB algorithms for signal detection and clearance analysis from in vivo optical data.</li>
+        <li>Conducted benchtop and in vivo experiments with tumor-repopulating and wild-type melanoma cells.</li>
+        <li>Processed and visualized time-series and imaging data, contributing to thesis work and potential publications.</li>
+        <li>Communicated results in technical reports, research meetings, and presentations.</li>
+      </ul>
+      <p>
+        <span class="pill">Python</span>
+        <span class="pill">MATLAB</span>
+        <span class="pill">In Vivo Imaging</span>
+        <span class="pill">Signal Processing</span>
+        <span class="pill">Near-Infrared Fluorescence</span>
+      </p>
+
+      <h3>X-ray Microdiffraction Analysis in Alzheimer’s Disease</h3>
+      <p class="subheading">
+        Research Assistant, Makowski Lab – Northeastern University (2023–2024)
+      </p>
+      <p>
+        Developed Python algorithms to convert X‑ray microdiffraction data into 2D brain maps to study structural changes associated with Alzheimer’s disease.
+      </p>
+      <ul>
+        <li>Implemented data processing pipelines for high‑dimensional diffraction datasets.</li>
+        <li>Generated structural maps to support hypotheses about disease‑related tissue changes.</li>
+        <li>Collaborated with researchers to interpret quantitative findings and refine analysis strategies.</li>
+      </ul>
+      <p>
+        <span class="pill">Python</span>
+        <span class="pill">Scientific Computing</span>
+        <span class="pill">Neuro-related Analysis</span>
       </p>
     </section>
 
